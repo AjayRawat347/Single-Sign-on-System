@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
+
+    <script src="keycloak.json"></script>
+    <script>
+    
+       
+        
+            keycloak.init({  onLoad: 'login-required',promiseType: 'native' }).then(function(authenticated) {
+                alert(authenticated ? 'authenticated' : 'not authenticated');
+            }).catch(function() {
+                alert('failed to initialize');
+            });
+        	
+            
+       
+    </script>
+</head>
+<body>
+<h1>to view cusutumer link clik the below link</h1>
+<ul>
+<li>To a<a href="custumer.jsp">Customer-portal</a>
+<li>To a<a href=" http://localhost:8080/auth/realms/Demo/protocol/openid-connect/logout?redirect_uri=http://localhost:8083/test4/index.html">logout</a>
+</ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <script src="keycloak.json"></script>
+    <script>
+    
+       
+        
+            keycloak.init({  onLoad: 'login-required',promiseType: 'native' }).then(function(authenticated) {
+                alert(authenticated ? 'authenticated' : 'not authenticated');
+            }).catch(function() {
+                alert('failed to initialize');
+            });
+        	
+            
+       
+    </script>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+<meta charset="ISO-8859-1">
+<title>Sample"hello,world"Application</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<td>
+
+<h1>"single sign on" Application</h1>
+<p>
+this is homepage
+so Welcome
+HAve a nice day
+
+</p>
+</td>
+</tr>
+</table>
+<p> use the following link</p>
+<ul>
+
+<li>To a<a href="roles/Index.html">login or sign up to continue</a>
+</ul>
+ 
+</body>
+</html>
